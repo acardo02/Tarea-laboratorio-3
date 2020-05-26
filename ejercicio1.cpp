@@ -4,20 +4,20 @@ using namespace std;
 
 int main() {
 
-    int a, b , c;
-    float x;
+    int num1, num2, resultado;
+    cout<<"ingrese el dividendo: ";
+    cin>>num1;
+    cout<<"ingrese el divisor: ";
+    cin>>num2;
 
-    cout<<"ingrese a: ";
-    cin>>a;
-    cout<<"ingrese b: ";
-    cin>>b;
-    cout<<"ingrese c: ";
-    cin>>c;
-
-    x = (a + b + c)/3;
-
-    cout<<x;
+    if(num1 % num2==0){
+        resultado = num1/num2;
+        cout<<"sus numeros sin son divisibles y el resultado de su division es: "<<resultado;
+    }else{
+        cout<<"su numero no es divisible por el otro";
+    }
 
 
+    
     return 0;
-}
+} 

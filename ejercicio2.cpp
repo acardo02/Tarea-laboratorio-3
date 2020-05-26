@@ -1,22 +1,17 @@
 #include <iostream>
-#include <math.h>
-#define M_PI 3.14159265358979323846
 
 using namespace std;
 
 int main() {
 
-    float a;
-    float x;
+    int x;
+    cout<<"ingrese numero: ";
+    cin>>x;
 
-    cout<<"ingrese radio: ";
-    cin>>a;
-
-    x = (M_PI)*(pow(a, 2));
-
-    cout<<x;
-
-
-
+    if(x % 2==0){
+        cout<<x<<" es un numero par";
+    }else{
+        cout<<x<<" es un numero impar";
+    }
     return 0;
 }

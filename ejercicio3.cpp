@@ -1,23 +1,20 @@
 #include <iostream>
-#include <math.h>
 
 using namespace std;
 
 int main() {
 
-    int a, b, c;
-    float x;
+    int x;
+    cout<<"ingrese el numero: ";
+    cin>>x;
 
-    cout<<"ingrese a: ";
-    cin>>a;
-    cout<<"ingrese b: ";
-    cin>>b;
-    cout<<"ingrese c: ";
-    cin>>c;
+    if(x>0) {
+        cout<<x<<" es un numero positivo";
+    } else if(x<0){
+        cout<<x<<" es un numero negativo";
+    } else {
+        cout<<"su numero es cero";
+    }
 
-    x = (-b + sqrt(pow (b, 2) - 4*a*c))/(2*a);
-
-    cout<<x;
-
-    return 0;
+    return 0;   
 }
